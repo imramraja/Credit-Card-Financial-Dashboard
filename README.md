@@ -1,184 +1,77 @@
-# 💳 Credit Card Weekly Analysis Dashboard
+# 💳 Credit Card Financial Dashboard (Power BI)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iamramraja/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imramraja)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
 ## 📌 Project Overview
 
-The **Credit Card Weekly Analysis Dashboard** was developed to provide financial stakeholders with structured, real-time insights into transaction performance and customer behavior.
+This interactive Power BI dashboard simulates a real-world **credit card portfolio analysis** for a financial institution. The goal was to uncover revenue drivers, customer segments, and transaction patterns to support data-driven decisions. The dashboards provide a 360° view of performance, enabling executives to spot trends and act quickly.
 
-The solution transforms raw transactional data into actionable intelligence through SQL-driven analytics and interactive BI reporting.
+### 🎯 Key Business Questions Answered
 
----
+- Which customer segments (income, education, marital status) generate the most revenue?
+- How do different card categories (Blue, Silver, Gold, Platinum) perform?
+- What are the top states by revenue, and how do transaction methods (chip, swipe, online) compare?
+- How does revenue trend over time, and what are the seasonal patterns?
 
-## 🎯 Project Objectives
+## 📊 Dashboards & Insights
 
-- Identify spending trends and revenue drivers  
-- Monitor interest income and transaction volumes  
-- Detect anomalies and unusual behavioral patterns  
-- Enable data-backed marketing and product decisions  
+### 1. Customer Overview Dashboard
+![Customer Dashboard](Dashboards/credit_card_customers_report.jpg)
 
----
+**Insights that drive action**:
+- **Married & High‑Income segments** contribute the most revenue (₹13M and ₹15M respectively) → target them with premium perks.
+- **Graduates** lead among education levels (₹10M) → consider alumni partnerships.
+- **California, Texas, New York** account for 60%+ of revenue → focus marketing spend here.
+- Revenue from both genders is **steadily growing** (0.2M → 0.8M in 2023) → maintain momentum with inclusive campaigns.
 
-# 🏗️ End-to-End Methodology
+### 2. Transaction Dashboard
+![Transaction Dashboard](Dashboards/credit_card_Transaction_report.jpg)
 
----
+**Insights that drive action**:
+- **Blue cards** dominate (83% of revenue, ₹46.1M) → protect this base with loyalty programs.
+- **Chip transactions** bring in ₹35M, nearly double online (₹17M) → invest in contactless infrastructure.
+- **Q4 revenue spike** (₹10M) suggests holiday season opportunity → plan promotions accordingly.
 
-## 1️⃣ Data Collection
+## 💡 Project Impact
 
-### Data Sources
-- Credit card transaction records  
-- Customer demographic datasets  
+- **Identified ₹46.1M revenue stream** (Blue cards) that can be further monetized.
+- **Pinpointed top 3 states** responsible for 60%+ revenue, enabling targeted marketing.
+- **Uncovered seasonal trend** (Q4 peak) to optimize campaign timing.
+- **Revealed chip usage dominance**, guiding investment in payment technology.
 
-### Key Fields Included
-- Transaction Amount  
-- Revenue  
-- Interest Earned  
-- Transaction Count  
-- Customer Segment  
-- Geographic Information (ZIP Code)  
-- Gender-based segmentation  
+## 🛠️ Technical Toolkit
 
----
+- **Power BI**: Data modeling, DAX measures, interactive dashboards
+- **SQL**: Data extraction and transformation
+- **Excel**: Initial data exploration and cleaning
 
-## 2️⃣ Data Preparation & ETL
+## 🚀 How to Explore This Project
 
-### 🗄️ Database Layer
-- PostgreSQL used for structured storage and transformation  
+1. Clone the repo  
+   `git clone https://github.com/imramraja/Credit-Card-Financial-Dashboard.git`
+2. Open `Credit_Card_Dashboard.pbix` in Power BI Desktop.
+3. Interact with filters (card category, time period, region) to see dynamic updates.
 
-### 🔄 ETL Process
-- Data extraction via SQL queries  
-- Cleaning inconsistent entries  
-- Handling null values  
-- Standardizing formats  
-- Creating derived KPI tables  
+## 📁 Repository Contents
 
-The dataset was structured for performance-efficient reporting and scalable dashboard refresh.
+- `Dashboards/` – Screenshots of the two dashboards
+- `Credit_Card_Dashboard.pbix` – Power BI file
+- `README.md` – You are here
 
----
+## 📈 Future Enhancements
 
-## 3️⃣ Data Analysis Framework
+- Incorporate **predictive modeling** (e.g., next quarter revenue forecast)
+- Add **customer churn analysis** using historical data
+- Automate data refresh with SQL database integration
 
-### 📊 KPI Analysis
+## 🙋‍♂️ About Me
 
-The following performance indicators were analyzed:
+I’m a recent graduate passionate about turning raw data into strategic business insights. This project reflects my ability to:
+- Think critically about business problems
+- Build clean, interactive visualizations
+- Communicate findings clearly
 
-| KPI | Value |
-|------|--------|
-| Total Revenue | $55,315,410 |
-| Total Interest Earned | $7,843,382 |
-| Total Transaction Amount | $44,522,013 |
-| Total Transaction Count | 655,651 |
-
----
-
-### 📈 Segment Analysis
-
-- Revenue contribution by customer demographics  
-- ZIP code-based performance comparison  
-- Gender-wise transaction behavior  
-- High-performing vs underperforming segments  
-
----
-
-### 🚨 Anomaly Detection
-
-- Identified revenue spike on **May 21, 2023**
-- Male customer revenue peaked at **$771,655**, exceeding normal variation thresholds  
-- Triggered anomaly flag for further investigation  
-
----
-
-### 📉 Trend Analysis
-
-- Female customer revenue showed a **19.13% decline over 28 days**
-- Observed cyclical transaction behavior across weeks
-- Identified regional interest earning concentration (ZIP 91750 outperformed significantly)
-
----
-
-# 📊 Dashboard Development
-
-Two interactive dashboards were built using **Power BI**:
-
----
-
-## 📌 1. Credit Card Transaction Report
-
-Focused on:
-
-- Revenue breakdown  
-- Transaction volume trends  
-- Interest income distribution  
-- Segment-level performance  
-
----
-
-## 📌 2. Credit Card Customer Report
-
-Focused on:
-
-- Customer behavioral patterns  
-- Gender-wise revenue trends  
-- Geographic analysis  
-- Anomaly tracking  
-
----
-
-# 🛠️ Tools & Technologies
-
-| Tool | Purpose |
-|-------|----------|
-| PostgreSQL | Data storage & transformation |
-| SQL | Querying & KPI extraction |
-| Power BI | Interactive visualization & reporting |
-
----
-
-# 🔍 Key Insights
-
-### 💰 Revenue Insights
-- Revenue concentrated within specific demographic and geographic clusters.
-- Certain segments significantly outperformed average contribution rates.
-
-### 📊 Interest Income Trends
-- ZIP 91750 generated disproportionately high interest revenue.
-- Interest distribution varied notably by customer segment.
-
-### 👥 Customer Behavior
-- Male customers showed higher short-term revenue volatility.
-- Female revenue trend indicated sustained decline requiring strategy adjustment.
-
-### 🚨 Risk & Monitoring
-- Early anomaly detection supports proactive fraud or abnormal activity review.
-- Transaction monitoring framework improves financial oversight.
-
----
-
-# 💼 Business Impact
-
-| Impact Area | Outcome |
-|-------------|----------|
-| Decision-Making | Data-driven revenue optimization |
-| Risk Monitoring | Early anomaly detection capability |
-| Marketing Strategy | Targeted demographic campaigns |
-| Performance Tracking | Weekly KPI-based monitoring |
-
----
-
-# 🏁 Conclusion
-
-The Credit Card Weekly Analysis Dashboard demonstrates a structured analytics pipeline:
-
-- Database-driven ETL (PostgreSQL)  
-- KPI computation using SQL  
-- Interactive business reporting (Power BI)  
-- Trend and anomaly detection  
-
-The project successfully converts transactional financial data into operational intelligence, enabling optimized revenue strategies, enhanced customer engagement, and improved monitoring within the financial services domain.
-
----
-
-## 🔮 Future Enhancements
-
-- Predictive customer churn modeling  
-- Fraud risk scoring integration  
-- Automated alert system for anomaly spikes  
-- Real-time dashboard streaming  
+**Let’s connect!**  
+[LinkedIn](https://www.linkedin.com/in/iamramraja/) | [GitHub](https://github.com/imramraja)
